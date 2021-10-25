@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  gap: 96px;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  line-height: 1.5em;
+  font-size: 48px;
+  font-weight: 700;
+  color: #282828;
+  text-align: center;
+}
+.header p {
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 500;
+  color: #888;
+  text-align: center;
+}
+
+/* Game Box */
+
+.gameBox {
+  width: 100%;
+  max-width: 992px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.gameBox .item {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  cursor: pointer;
+}
+.gameBox .item .cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.gameBox .item .cover .texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+.gameBox .item .cover .texture span {
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 500;
+  color: #aaa;
+}
+.gameBox .item .cover img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+.resBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resBox h4 {
+  line-height: 1.5em;
+  font-size: 24px;
+  font-weight: 700;
+  color: #282828;
+  text-align: center;
+}
+.resBox p {
+  line-height: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+  color: #888;
+  text-align: center;
+}
+.resBox button {
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(16, 201, 99);
+  border: none;
+  text-align: center;
+  padding: 12px 36px;
+  border-radius: 96px;
+  cursor: pointer;
+  margin-top: 24px;
+}
